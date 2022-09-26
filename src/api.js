@@ -46,7 +46,7 @@ router.get("/", (req, res) => {
 
 router.get("/test", (req, res) => {
   console.log("STARTED stock price fetch");
-  await getLastStockPrice(stockSymbol);
+  getLastStockPrice(stockSymbol);
   console.log("COMPLETED Stock fetch");
 });
 
