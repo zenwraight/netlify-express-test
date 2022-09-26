@@ -4,6 +4,8 @@ const serverless = require("serverless-http");
 const app = express();
 const router = express.Router();
 
+const fetch = require("fetch");
+
 // This is to fetch current price of stock delayed by every 30 minutes
 const getLastStockPrice = async (stockSymbol) => {
   console.log("Fetch stock price for " + stockSymbol);
