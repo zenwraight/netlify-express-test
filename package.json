@@ -6,9 +6,9 @@
   "dependencies": {
     "express": "^4.16.4",
     "netlify-lambda": "^1.4.3",
+    "node-fetch": "^3.2.10",
     "serverless-http": "^1.9.1"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider ./node_modules/.bin/netlify-lambda serve src",
     "build": "NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider ./node_modules/.bin/netlify-lambda build src"
